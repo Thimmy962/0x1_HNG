@@ -41,7 +41,8 @@ def is_armstrong(num):
     # using list comprehension loop through the str_num 
     arm = sum(int(dig) ** power for dig in str_num)
 
-    return "armstrong" if num == arm  else "Not Armstrong"
+    if num == arm:
+        return "armstrong"
 
 """
     takes an integer variable num 

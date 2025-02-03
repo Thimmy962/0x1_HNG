@@ -18,12 +18,16 @@ def index(request):
     fun_fact = func.fun_fact(num)
     if  fun_fact == 500:
         fun_fact = "Could not get fun_fact for number as connection timed out"
-        
+    armstrong = func.is_armstrong(num)
+    if armstrong != None:
+        li = [armstrong, func.is_even_or_odd(num)]
+    else:
+        li = [func.is_even_or_odd(num)]
     data = {
         "number": num,
         "is_prime": func.is_prime_num(num),
         "is_perfect": func.is_perfect(num),
-        "properties": [func.is_armstrong(num), func.is_even_or_odd(num)],
+        "properties": li,
         "digit_sum": func.digit_sum(num),
         "fun_fact": fun_fact
     }
