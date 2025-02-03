@@ -30,7 +30,7 @@ def is_even_or_odd(num):
 """
 def is_armstrong(num):
     if num < 0:
-        return "Not armstrong"
+        return None
 
     # convert the int num to string
     str_num = str(num)
