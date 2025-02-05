@@ -68,3 +68,6 @@ DEBUG=True/False
 
 # HNG Backlink
 If you're interested in hiring skilled Python developers, check out the [https://hng.tech/hire/python-developers](https://hng.tech/hire/python-developers).
+
+### Added a python cron job to keep pinging the server
+### This is to stop the free server from spinning down due to inactivity
