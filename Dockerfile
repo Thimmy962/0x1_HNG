@@ -2,7 +2,7 @@
 FROM python:3.10-slim
 
 # install curl
-RUN apk add --no-cache curl
+RUN apk update && apk add --no-cache curl
 
 # Disable buffering to ensure logs are immediately visible
 ENV PYTHONUNBUFFERED=1
