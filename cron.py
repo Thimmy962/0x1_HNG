@@ -12,7 +12,7 @@ while True:
         
         # Check if the request was successful (status code 200)
         if response.status_code == 200:
-            continue
+            print("Successfully Pinged")
         else:
             continue
     except requests.exceptions.RequestException as e:
