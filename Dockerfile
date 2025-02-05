@@ -1,6 +1,9 @@
 # start from the official Python slim image
 FROM python:3.10-slim
 
+# install curl
+RUN apk add --no-cache curl
+
 # Disable buffering to ensure logs are immediately visible
 ENV PYTHONUNBUFFERED=1
 
